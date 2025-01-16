@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/Rooms.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Room Control</title>
+  
+<link rel="stylesheet" href="Rooms2.css"></head>
+<body>
+     <div id="Roommaindiv">
+      <div id="roomdiv">
+        <h1 id="h11">Living Room</h1>
+        <div class="statusdiv">
+          <div>
+          <p>Your Light Status</p>
+          <button class="sbutton">Status</button>
+        </div>
+        <div>
+          <p>Your fan Status</p>
+          <button class="sbutton">Status</button>
+        </div>
+        </div>
+          <h1>Switch ON/OFF your Light and Fan</h1>
+          <div class="onoff">
+            <div>
+          <p class="ponoff">Light ON/OFF</p>
+          <button class="lonoff" id="onn">ON</button>
+          <button class="lonoff " id="off">OFF</button>
+        </div>
+        <div>
+          <p class="ponoff">Fan ON/OFF</p>
+          <button class="lonoff" id="onn">ON</button>
+          <button class="lonoff" id="off">OFF</button>
+      </div> 
+    </div>
+    <p id="rommsmoke">Smoke Level in your Room  <textarea name="Smoke level" id="Smoke" cols="10" rows="1"></textarea></p>
+        </div>
+      <div id="kitchendiv">
+        <h1 id="h111">Kitchen</h1>
+        <div class="statusdiv2">
+          <div>
+          <p>Your Light Status</p>
+          <button class="sbutton">Status</button>
+        </div>
+        <div>
+          <p>Your fan Status</p>
+          <button class="sbutton">Status</button>
+        </div>
+        </div>
+          <h1>Switch ON/OFF your Light and Fan</h1>
+          <div class="onoff">
+            <div>
+          <p class="ponoff">Light ON/OFF</p>
+          <button class="lonoff" id="onn">ON</button>
+          <button class="lonoff " id="off">OFF</button>
+        </div>
+        <div>
+          <p class="ponoff">Fan ON/OFF</p>
+          <button class="lonoff" id="onn">ON</button>
+          <button class="lonoff" id="off">OFF</button>
+      </div> 
+    </div>
+    <p id="rommsmoke">Smoke Level in your Kitchen  <textarea name="Smoke level" id="Smoke" cols="10" rows="1"></textarea></p>
+    <div id="regdiv">
+      <div>
+      <p>Your Gas Regulator Status</p>
+           <button id="reulator">Status</button>
+          </div>
+          <div>
+           <p>Switch ON/OFF Gas Regulator</p>
+           <button class="ronoff" id="onn">ON</button>
+          <button class="ronoff" id="off">OFF</button>
+        </div>
+          </div>
+      </div>
+     </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

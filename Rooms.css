@@ -1,0 +1,210 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+
+h1 {
+    font-size: 24px;
+}
+
+#h11, #h111 {
+    margin-top: 0;
+}
+
+/* Room Styles */
+
+#roomdiv, #kitchendiv {
+    margin-bottom: 40px;
+}
+
+.statusdiv, .statusdiv2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.statusdiv p, .statusdiv2 p {
+    font-size: 30px;
+    margin: 10px;
+    margin-right: 40px;
+    color: blue;
+}
+
+button {
+    margin: 20px;
+    margin-left: 60px;
+    font-size: 20px;
+    border-radius: 50px;
+}
+
+.onoff {
+    display: flex;
+    margin: 20px;
+    margin-left: 40px;
+}
+
+.ponoff {
+    margin: 30px;
+    margin-left: 100px;
+}
+
+.lonoff {
+    margin: 20px;
+    margin-left: 90px;
+}
+
+#roomdiv {
+    background-color: rgb(230, 167, 167);
+    width: 730px;
+    height: 740px;
+    border-radius: 10px;
+}
+
+#h11 {
+    color: rgb(27, 20, 14);
+    margin-left: 300px;
+}
+
+#h111 {
+    color: rgb(23, 18, 13);
+    margin-left: 350px;
+}
+
+#onn {
+    background-color: rgb(57, 238, 57);
+}
+
+#off {
+    background-color: red;
+}
+
+#Roommaindiv {
+    display: flex;
+    flex-direction: column; /* Adjusts layout for smaller screens */
+    align-items: center; /* Centers content horizontally */
+    max-width: 100%; /* Allows content to take up maximum width */
+    padding: 20px;
+}
+
+#rommsmoke {
+    margin-left: 170px;
+}
+
+#regdiv {
+    display: flex;
+    margin-left: 80px;
+}
+
+.ronoff {
+    margin: 20px;
+    margin-left: 40px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+        margin-left: 0; /* Removes left margin */
+    }
+
+    #Roommaindiv {
+        padding: 10px;
+    }
+
+    .statusdiv, .statusdiv2 {
+        flex-direction: column; /* Changes layout to column for smaller screens */
+    }
+
+    .statusdiv p, .statusdiv2 p {
+        margin-right: 0; /* Removes right margin */
+    }
+
+    button {
+        margin-left: 0; /* Removes left margin */
+    }
+
+    .onoff {
+        margin-left: 0; /* Removes left margin */
+    }
+
+    .ponoff {
+        margin-left: 0; /* Removes left margin */
+    }
+
+    .lonoff {
+        margin-left: 0; /* Removes left margin */
+    }
+
+    #rommsmoke {
+        margin-left: 0; /* Removes left margin */
+    }
+
+    #regdiv {
+        margin-left: 0; /* Removes left margin */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #roomdiv, #kitchendiv {
+        width: 100%; /* Adjusts width to fill the screen */
+        height: auto; /* Allows height to adjust based on content */
+    }
+
+    #Roommaindiv {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .statusdiv, .statusdiv2 {
+        margin-top: 5px;
+    }
+
+    .statusdiv p, .statusdiv2 p {
+        font-size: 20px;
+        margin: 5px;
+        margin-right: 20px;
+    }
+
+    button {
+        margin: 10px;
+        margin-left: 30px;
+        font-size: 16px;
+    }
+
+    .onoff {
+        margin: 10px;
+        margin-left: 20px;
+    }
+
+    .ponoff {
+        margin: 15px;
+        margin-left: 50px;
+    }
+
+    .lonoff {
+        margin: 10px;
+        margin-left: 40px;
+    }
+
+    #rommsmoke {
+        margin-left: 60px;
+    }
+
+    #regdiv {
+        margin-left: 40px;
+    }
+
+    .ronoff {
+        margin: 10px;
+        margin-left: 20px;
+    }
+}
